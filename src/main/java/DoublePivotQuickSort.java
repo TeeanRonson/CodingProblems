@@ -1,4 +1,3 @@
-package java.codingproblems.cs686;
 
 public class DoublePivotQuickSort {
 
