@@ -116,8 +116,8 @@ public class CheckerBoardChecker {
 //        cbc.setBoard(values);
 //        cbc.maxDollars();
 
-        CheckerBoardChecker cbc1 = new CheckerBoardChecker((int) Math.sqrt(values1.length));
-        cbc1.setBoard(values1);
+        CheckerBoardChecker cbc1 = new CheckerBoardChecker((int) Math.sqrt(values2.length));
+        cbc1.setBoard(values2);
         LinkedList<Integer> path = cbc1.maxDollars();
 
         for (int i: path) {
