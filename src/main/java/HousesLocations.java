@@ -1,4 +1,4 @@
-package java.codingproblems.cs686;
+
 
 public class HousesLocations {
 

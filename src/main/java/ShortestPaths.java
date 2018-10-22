@@ -2,16 +2,15 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import javafx.scene.media.SubtitleTrack;
 import sun.security.provider.certpath.Vertex;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.TreeMap;
+import java.util.*;
 
 public class ShortestPaths {
 
@@ -29,63 +28,57 @@ public class ShortestPaths {
     private final static String DURATION = "duration";
 
 
-    HashMap<Character, LinkedList<Node>> adjList;
-    TreeMap<Integer, LinkedList<Node>> result;
+    HashMap<Character, HashMap<Character, Integer>> adjList;
+    ArrayList<Path> result;
 
     public ShortestPaths() {
-
         this.adjList = new HashMap<>();
-        this.result = new TreeMap<>();
+        this.result = new ArrayList<>();
     }
 
 
-    public void findShortestPaths(char start, char end) {
+    public void findShortestPaths(Character start, Character end) {
 
-        for (Node node: adjList.get(start)) {
-            LinkedList<Node> path = new LinkedList<>();
-            int total = 0;
-            System.out.println("Node of A: " + node.vert);
-            dfs(node, end, total, path);
+        if (start == null || end == null || !this.adjList.containsKey(start) || !this.adjList.containsKey(end)) {
+            return;
         }
+
+        LinkedList<Character> currPath = new LinkedList<>();
+        HashSet<Character> visited = new HashSet<>();
+        dfs(start, end, 0, currPath, visited);
 
         System.out.println("Result: ");
-
-        for (int i: result.keySet()) {
-            System.out.println(i);
-            for (Node node: result.get(i)) {
-                System.out.print(node.vert + " ");
-            }
-            System.out.println();
+        Collections.sort(this.result);
+        for (Path p: result) {
+            System.out.println(p);
         }
+        System.out.println(this.result.size());
+
    }
 
-    private void dfs(Node node, char end, int total, LinkedList<Node> path) {
 
-//        System.out.println("Checking node: " + node.vert);
+    private void dfs(Character start, Character end, Integer total, LinkedList<Character> currPath, HashSet<Character> visited) {
 
-        if (node == null) {
+        if (visited.contains(start)) {
             return;
         }
 
-        if (node.vert == end) {
-            total += node.duration;
-            path.add(node);
-            result.put(total, path);
-            return;
-        }
+        currPath.add(start);
+        visited.add(start);
 
-        node.visited();
-        total += node.duration;
-        path.add(node);
-
-        for (Node next: adjList.get(node.vert)) {
-            if (next.visited == false) {
-                dfs(next, end, total, path);
+        if (start == end) {
+            result.add(new Path(total, new LinkedList<>(currPath)));
+        } else {
+            for (Map.Entry<Character, Integer> map: adjList.get(start).entrySet()) {
+                dfs(map.getKey(), end, total + map.getValue(), currPath, visited);
             }
         }
-        node.reset();
 
-//        System.out.println("Checking");
+
+
+        visited.remove(start);
+        currPath.removeLast();
+
     }
 
 
@@ -108,14 +101,13 @@ public class ShortestPaths {
                     char from = route.get(FROM).getAsCharacter();
                     char to = route.get(TO).getAsCharacter();
                     int duration = route.get(DURATION).getAsInt();
-                    Node vertex = new Node(to, duration);
 
                     if (adjList.get(from) == null) {
-                        LinkedList<Node> nodes = new LinkedList<>();
-                        nodes.add(vertex);
-                        adjList.put(from, nodes);
+                        HashMap<Character, Integer> dest = new HashMap<>();
+                        dest.put(to, duration);
+                        adjList.put(from, dest);
                     } else {
-                        adjList.get(from).add(vertex);
+                        adjList.get(from).put(to, duration);
                     }
                 }
             }
@@ -132,21 +124,31 @@ public class ShortestPaths {
 
         char vert;
         int duration;
-        boolean visited;
         private Node(char vert, int duration) {
             this.vert = vert;
             this.duration = duration;
-            this.visited = false;
+
+        }
+    }
+
+    private class Path implements Comparable<Path> {
+
+        int duration;
+        List<Character> path;
+        private Path(int duration, List<Character> path) {
+            this.duration = duration;
+            this.path = path;
         }
 
-        private void visited() {
-            this.visited = true;
+        @Override
+        public int compareTo(Path o) {
+            return this.duration - o.duration;
         }
 
-        private void reset() {
-            this.visited = false;
-        }
+        public String toString() {
+            return "Duration: " + this.duration + " Path: " + this.path;
 
+        }
     }
 
 
@@ -158,12 +160,14 @@ public class ShortestPaths {
 //
         for (char c: sp.adjList.keySet()) {
             System.out.println("From: " + c);
-            for (Node node: sp.adjList.get(c)) {
-                System.out.println(node.vert);
+            for (Map.Entry<Character, Integer> dests: sp.adjList.get(c).entrySet()) {
+                System.out.println(dests.getKey() + " " + dests.getValue());
             }
         }
 
         sp.findShortestPaths('A', 'H');
+        
+
     }
 }
 
