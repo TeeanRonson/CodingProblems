@@ -86,22 +86,15 @@ public class KnightsDialer {
 
     public void dialHelper(int start, int length,  HashMap<Integer, LinkedList<Integer>> dialpad, LinkedList<Integer> path) {
 
-        System.out.println("------");
+
         if (length <= 0) {
-//            path.add(start);
-            System.out.println();
-            System.out.println("add " + path);
-            result.add(new LinkedList<>(path));
+          result.add(new LinkedList<>(path));
             return;
         }
 
         path.add(start);
-        System.out.println("Path: " + path);
 
         for (Integer i: dialpad.get(start)) {
-            System.out.println("Set:" + dialpad.get(start));
-            System.out.println("next item: " + i);
-            System.out.println("Length: " + length);
             dialHelper(i, length - 1, dialpad, path);
         }
         int a = path.removeLast();
@@ -113,7 +106,7 @@ public class KnightsDialer {
     public static void main(String[] args) {
 
         KnightsDialer kd = new KnightsDialer();
-        kd.dial(6, 4);
+        kd.dial(6, 3);
 
     }
 
