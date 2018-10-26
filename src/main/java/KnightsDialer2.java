@@ -1,13 +1,12 @@
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 
-public class KnightsDialer {
+public class KnightsDialer2 {
 
-    HashSet<LinkedList> result;
-    public KnightsDialer() {
-        this.result = new HashSet<>();
+    LinkedList<String> result;
+    public KnightsDialer2() {
+        this.result = new LinkedList<>();
     }
 
     public HashMap<Integer, LinkedList<Integer>> fillPad() {
@@ -75,45 +74,36 @@ public class KnightsDialer {
         }
 
         HashMap<Integer, LinkedList<Integer>> dialpad = fillPad();
-        LinkedList<Integer> path = new LinkedList();
-        dialHelper(start, length, dialpad, path);
+
+        dialHelper(start, length, dialpad, "");
 
         System.out.println("Result");
-        for(LinkedList ll: this.result) {
-            System.out.println(ll);
+        for(String s: this.result) {
+            System.out.println(s);
         }
     }
 
-    public void dialHelper(int start, int length,  HashMap<Integer, LinkedList<Integer>> dialpad, LinkedList<Integer> path) {
+    public void dialHelper(int start, int length, HashMap<Integer, LinkedList<Integer>> dialpad, String path) {
 
-        System.out.println("------");
-        if (length <= 0) {
-//            path.add(start);
-            System.out.println();
-            System.out.println("add " + path);
-            result.add(new LinkedList<>(path));
-            return;
+        if (path == "") {
+            path += String.valueOf(start);
         }
 
-        path.add(start);
-        System.out.println("Path: " + path);
+        if (length <= 1) {
+            this.result.add(path);
+        }
 
         for (Integer i: dialpad.get(start)) {
-            System.out.println("Set:" + dialpad.get(start));
-            System.out.println("next item: " + i);
-            System.out.println("Length: " + length);
-            dialHelper(i, length - 1, dialpad, path);
+            System.out.println(i);
+            dialHelper(i, length - 1, dialpad, path += String.valueOf(i));
         }
-        int a = path.removeLast();
-        System.out.println("Remove: " + a);
-
-
     }
 
     public static void main(String[] args) {
 
-        KnightsDialer kd = new KnightsDialer();
-        kd.dial(6, 4);
+        KnightsDialer2 kd2 = new KnightsDialer2();
+        kd2.dial(6, 3);
+
 
     }
 
