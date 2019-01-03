@@ -5,19 +5,20 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 
 
 public class HTTPFetcher {
 
-    public static int PORT = 80;
+    public static int PORT = 1024;
 
     public static String download(String host, String path) {
 
         StringBuffer buf = new StringBuffer();
 
         try (
-                Socket sock = new Socket(host, PORT); //create a connection to the web server
+                Socket sock = new Socket(InetAddress.getLocalHost(), PORT); //create a connection to the web server
                 OutputStream out = sock.getOutputStream(); //get the output stream from socket
                 InputStream instream = sock.getInputStream(); //get the input stream from socket
                 //wrap the input stream to make it easier to read from
@@ -50,6 +51,10 @@ public class HTTPFetcher {
                 + "Connection: close\n" //make sure the server closes the connection after we fetch one page
                 + "\r\n";
         return request;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(download("www.yelp.com", "/biz/the-velo-rouge-cafe-san-francisco"));
     }
 
 }

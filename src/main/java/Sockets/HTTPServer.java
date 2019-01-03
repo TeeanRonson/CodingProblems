@@ -21,24 +21,29 @@ public class HTTPServer {
              BufferedReader instream = new BufferedReader(new InputStreamReader(sock.getInputStream()));
              PrintWriter writer = new PrintWriter(sock.getOutputStream())) {
 
-            String message = "";
-            String line = instream.readLine();
+            String body = "";
+            String request = instream.readLine();
 
+            String line = instream.readLine();
             while(line != null && !line.trim().isEmpty()) {
-                message += line + "\n";
+                body += line + "\n";
                 line = instream.readLine();
             }
-            System.out.println("Request: \n" + message);
 
-            String headers = "HTTP/1.0 200 OK\n" +
-                    "\r\n";
+            System.out.println("Request Line: \n" + request);
+            System.out.println("Body \n" + body);
+
+            String[] requestParts = request.split("\\s+");
+
+//            String headers = "HTTP/1.0 200 OK\n" +
+//                    "\r\n";
 
             String page = "<html> " +
                     "<head><title>TEST</title></head>" +
                     "<body>This is a short test page.</body>" +
                     "</html>";
 
-            writer.write(headers);
+            writer.write(body);
             writer.write(page);
             writer.flush();
         } catch(IOException ioe) {
