@@ -83,6 +83,72 @@ public class SortingAlgos {
 
     }
 
+
+    /**
+     * iterative Merge Sort
+     * power of 2
+     *
+     *
+     * @param array
+     */
+    public static void mergeSort(int[] array) {
+
+        for (int i = 1; i < array.length; i = i*2) {
+            print(array);
+            for (int j = 0; j < array.length; j += i*2) {
+                merge(array, j, j + i*2);
+            }
+        }
+        print(array);
+    }
+
+    private static void merge(int[] array, int start, int end) {
+
+        int middle = (start + end)/2;
+        int[] merge = new int[end];
+        int i = start;
+        int j = middle;
+        int k = 0;
+
+        while (i < middle && j < end) {
+            if (array[i] <= array[j]) {
+                merge[k] = array[i];
+                k++;
+                i++;
+            } else {
+                merge[k] = array[j];
+                k++;
+                j++;
+            }
+        }
+
+        while(i < middle) {
+            merge[k] = array[i];
+            k++;
+            i++;
+        }
+
+        while(j < end) {
+            merge[k] = array[j];
+            k++;
+            j++;
+        }
+
+        copyBack(merge, array, start, end);
+    }
+
+    private static void copyBack(int[] merge, int[] array, int start, int end) {
+
+        int k = 0;
+        for (int i = start; i < end; i++) {
+            array[i] = merge[k];
+            k++;
+        }
+
+    }
+
+
+
     /**
      * Print out array
      * @param array
@@ -99,11 +165,14 @@ public class SortingAlgos {
 
     public static void main(String args[]) {
 
-        int[] easy = {4, 3, 1, 5, 2};
-        int[] medium = {4, 3, 1, 5, 2, 18, 7, 45, 34, 13, -1, 0, 78, -5};
+        int[] easy = {4, 3, 1, 2};
+        int[] medium = {4, 3, 1, 5, 2, 8, 7, 6, 10, 9, 11, 12, 13, 15, 16, 14};
 
 //        SelectionSort(easy);
-        QuickSort(0, easy.length - 1, easy);
-        QuickSort(0, medium.length - 1, medium);
+//        QuickSort(0, easy.length - 1, easy);
+//        QuickSort(0, medium.length - 1, medium);
+
+
+        mergeSort(medium);
     }
 }

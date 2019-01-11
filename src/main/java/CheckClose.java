@@ -69,4 +69,36 @@ public class CheckClose {
 
 
     }
+
+
+//    class Solution {
+//        public boolean isValid(String s) {
+//
+//            Stack<Character> store = new Stack<Character>();
+//            for (int i = 0; i < s.length(); i++) {
+//                if (s.charAt(i) == ')') {
+//                    if (store.isEmpty() || store.pop() != '(') {
+//                        return false;
+//                    }
+//                } else if (s.charAt(i) == '}') {
+//                    if (store.isEmpty() || store.pop() != '{') {
+//                        return false;
+//                    }
+//                } else if (s.charAt(i) == ']') {
+//                    if (store.isEmpty() || store.pop() != '[') {
+//                        return false;
+//                    }
+//                } else {
+//                    store.push(s.charAt(i));
+//                }
+//            }
+//
+//            if (store.isEmpty()) {
+//                return true;
+//            }
+//
+//            return false;
+//
+//        }
+//    }
 }
