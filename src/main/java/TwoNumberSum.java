@@ -3,7 +3,7 @@ public class TwoNumberSum {
 
     /**
      * Uses quick sort to sort
-     * Then two pointers that work inwards to find the targetSum 
+     * Then two pointers that work inwards to find the targetSum
      * @param array
      * @param targetSum
      * @return
