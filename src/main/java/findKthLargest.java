@@ -75,8 +75,9 @@ public class findKthLargest {
         int k = 3;
 
         findKthLargest fkl = new findKthLargest();
-        System.out.println(fkl.findKthLargest(values1, k));
-
+//        System.out.println(fkl.findKthLargest(values1, k));
+        boolean found = false;
+        System.out.println(!found);
 
 
     }

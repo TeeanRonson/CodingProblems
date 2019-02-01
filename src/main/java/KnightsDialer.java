@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class KnightsDialer {
 
-    HashSet<LinkedList> result;
+    LinkedList<LinkedList> result;
     public KnightsDialer() {
-        this.result = new HashSet<>();
+        this.result = new LinkedList<>();
     }
 
     public HashMap<Integer, LinkedList<Integer>> fillPad() {
@@ -89,7 +89,7 @@ public class KnightsDialer {
 
         if (length <= 0) {
           result.add(new LinkedList<>(path));
-            return;
+          return;
         }
 
         path.add(start);

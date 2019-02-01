@@ -7,7 +7,6 @@ public class RiverSizes {
 
         boolean[][] seen = new boolean[matrix.length][matrix[0].length];
         ArrayList<Integer> results = new ArrayList<>();
-        fillSeen(seen, matrix);
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
@@ -19,15 +18,6 @@ public class RiverSizes {
         }
         return results;
 
-    }
-
-    public static void fillSeen(boolean[][] seen, int[][] matrix) {
-
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                seen[i][j] = false;
-            }
-        }
     }
 
     public static int findRiverLength(int i, int j, int[][] matrix, boolean[][] seen) {
@@ -102,7 +92,7 @@ public class RiverSizes {
         ArrayList<Integer> answer = riverSizes(matrix);
 
         for (int i: answer) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
     }
