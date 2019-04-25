@@ -258,30 +258,6 @@ public class TreeTraversals {
             graph.adjListArray[src].add(dest);
 
         }
-
-        void DFSUtil(int v, boolean visited[]) {
-            // Mark the current node as visited and print it
-            visited[v] = true;
-            System.out.print(v+" ");
-
-            // Recur for all the vertices adjacent to this vertex
-            Iterator<Integer> i = adjListArray[v].listIterator();
-            while (i.hasNext()) {
-                int n = i.next();
-                if (!visited[n])
-                    DFSUtil(n, visited);
-            }
-        }
-
-        // The function to do DFS traversal. It uses recursive DFSUtil()
-        void DFS(int v) {
-            // Mark all the vertices as not visited(set as
-            // false by default in java)
-            boolean visited[] = new boolean[V];
-
-            // Call the recursive helper function to print DFS traversal
-            DFSUtil(v, visited);
-        }
     }
 
     /**
@@ -329,8 +305,18 @@ public class TreeTraversals {
         g.addEdge(g, 1, 4);
         g.addEdge(g, 2, 5);
         g.addEdge(g, 2, 6);
-        g.addEdge(g, 6, 7);
+//        g.addEdge(g, 6, 7);
         g.addEdge(g, 4, 7);
+
+        /**
+         *         0
+         *       /   \
+         *      1    2
+         *     / \  / \
+         *    3  4  5  6
+         *      /
+         *     7
+         */
 
 
 
@@ -349,10 +335,10 @@ public class TreeTraversals {
 //        System.out.println("\nIterative PostOrder");
 //        postOrderIterative(tree.root);
 
-//        System.out.println("DFS Recursion Rong");
-//        for (int i: dfsRecursive(g, 0)) {
-//            System.out.print(i + " ");
-//        }
+        System.out.println("DFS Recursion Rong");
+        for (int i: dfsRecursive(g, 0)) {
+            System.out.print(i + " ");
+        }
 //
 //        System.out.println("\nDFS Iterative Rong");
 //        for (int i: dfsIterative(g, 0)) {
@@ -367,10 +353,10 @@ public class TreeTraversals {
 //            System.out.print(i + " ");
 //        }
 
-        System.out.println("\nFind distances");
-        for (int i: findShortestPath(g, 0, 7)) {
-            System.out.print(i + " ");
-        }
+//        System.out.println("\nFind distances");
+//        for (int i: findShortestPath(g, 0, 7)) {
+//            System.out.print(i + " ");
+//        }
 
     }
 }

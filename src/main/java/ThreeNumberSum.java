@@ -44,8 +44,9 @@ public class ThreeNumberSum {
     public static void main(String[] args) {
 
         Integer[] one = {12, 3, 1, 2, -6, 5, -8, 6};
+        Integer[] two = {-1, 0, 1, 0};
 
-        ArrayList<Integer[]> a = threeNumberSum(one, 0);
+        ArrayList<Integer[]> a = threeNumberSum(two, 0);
 
         System.out.println("Results");
         for (Integer[] x : a) {

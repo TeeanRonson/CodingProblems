@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Json">
+        <CLASSES />
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../CS601/gson/gson/docs/javadocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../CS601/gson/codegen/src/main/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/codegen/src/test/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/examples/android-proguard-example/src" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/extras/src/main/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/extras/src/test/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/gson/src/main/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/gson/src/main/java-templates" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/gson/src/test/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/metrics/src/main/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/proto/src/main/java" />
+          <root url="file://$MODULE_DIR$/../CS601/gson/proto/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="java" level="project" />
+  </component>
+</module>

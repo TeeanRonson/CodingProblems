@@ -83,16 +83,16 @@ public class BFS {
         Graph g = new Graph(5);
 
         g.addEdge(g, 0, 1);
-        g.addEdge(g, 0, 4);
         g.addEdge(g, 1, 2);
         g.addEdge(g, 1, 3);
-        g.addEdge(g, 1, 4);
         g.addEdge(g, 2, 3);
-        g.addEdge(g, 3, 4);
+        g.addEdge(g, 3, 1);
+        g.addEdge(g, 4, 5);
+
 
 //        bfs(g, 0);
 
-        System.out.println(findConnection(g, 0, 0));
+        System.out.println(findConnection(g, 0, 4));
     }
 
 }

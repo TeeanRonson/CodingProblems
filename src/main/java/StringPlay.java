@@ -17,6 +17,7 @@ public class StringPlay {
                     } else {
                         board[i][j] = board[i-1][j-1] + 1;
                     }
+
                     if (board[i][j] > result.length()) {
                         result = a.substring(i - board[i][j] + 1, i + 1);
                         System.out.println("result: " + result);
@@ -31,8 +32,8 @@ public class StringPlay {
     public static void main(String[] args) {
 
 
-        String a = "ABAB";
-        String b = "BABA";
+        String a = "ABABpotatoes";
+        String b = "BApotatoesBA";
 
         System.out.println(longestSubstring(a, b));
 

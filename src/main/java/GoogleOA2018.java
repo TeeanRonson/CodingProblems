@@ -35,7 +35,6 @@ public class GoogleOA2018 {
             return 0;
         }
 
-
         int highest = Integer.MIN_VALUE;
         int rows = 0;
 
