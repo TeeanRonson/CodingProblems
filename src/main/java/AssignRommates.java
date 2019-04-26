@@ -11,8 +11,8 @@ public class AssignRommates {
      */
     public static ArrayList<Integer[]> findOptimal(int[] array) {
 
-        HashMap<Integer, Integer> options = new HashMap<Integer, Integer>();
-        ArrayList<Integer[]> result = new ArrayList<Integer[]>();
+        HashMap<Integer, Integer> options = new HashMap<>();
+        ArrayList<Integer[]> result = new ArrayList<>();
         boolean[] added = new boolean[array.length];
 
         for (int i = 0; i < array.length; i++) {
@@ -38,11 +38,36 @@ public class AssignRommates {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static ArrayList<Integer[]> findOptimal1(int[] array) {
+
+        ArrayList<Integer[]> assigned = new ArrayList<>();
+        ArrayList<Integer> unassigned = new ArrayList<>();
+        boolean[] added = new boolean[array.length];
 
 
-        int[] a = {1, 0, 1, 1};
-        for (Integer[] i: findOptimal(a)) {
+        
+//        for (int i = 0; i < array.length; i++) {
+//            if (i == array[array[i]] && array[array[i]] == i) {
+//                result.add(new Integer[] {i, array[i]});
+//                added[i] = true;
+//                added[array[i]] = true;
+//            }
+//        }
+//
+//
+//
+//        System.out.println(unassigned);
+//
+//        for (int i = 0; i < unassigned.size(); i += 2) {
+//            result.add(new Integer[] {unassigned.get(i), unassigned.get(i + 1)});
+//        }
+
+        return assigned;
+    }
+
+    public static void print(ArrayList<Integer[]> assigned) {
+
+        for (Integer[] i: assigned) {
             for (int x: i) {
                 System.out.print(x + " ");
             }
@@ -50,4 +75,20 @@ public class AssignRommates {
         }
     }
 
+    public static void main(String[] args) {
+
+
+        int[] a = {1, 0, 1, 1};//two people get assigned
+        int[] b = {2, 3, 0, 1};//everyone is optimal
+        int[] c = {1, 3, 1, 0};//no one gets their optimal
+        int[] d = {0, 0, 3, 2};//2, 3 gets their optimal
+
+
+        for (Integer[] i: findOptimal1(d)) {
+            for (int x: i) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
+    }
 }

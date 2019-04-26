@@ -3,9 +3,9 @@ import java.util.LinkedList;
 public class backspaceCompare {
 
 
-    public static boolean backspaceCompare(String S, String T) {
+    public static boolean backspaceCompare(String S, String T, char backSpace) {
 
-        Character backspace = '/';
+        Character backspace = backSpace;
         char[] sWord = S.toCharArray();
         char[] tWord = T.toCharArray();
         LinkedList<Character> sList = new LinkedList<>();
@@ -90,14 +90,13 @@ public class backspaceCompare {
         return true;
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
+      System.out.println(backspaceCompare("ab#c", "ad#c", '#'));
 
-//      System.out.println(backspaceCompare("ab#c", "ad#c"));
+      System.out.println(backspaceCompare("y#fo##f", "y#f#o##f", '#'));
 
-//        System.out.println(backspaceCompare("y#fo##f", "y#f#o##f"));
+      System.out.println(backspaceCompare("ab//a", "abc/a", '/'));
 
-            System.out.println(findMatch("ab//a", "abc/a"));
-
-        }
+    }
 }
