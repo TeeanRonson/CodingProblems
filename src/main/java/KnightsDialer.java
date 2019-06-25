@@ -84,22 +84,21 @@ public class KnightsDialer {
         }
     }
 
-    public void dialHelper(int start, int length,  HashMap<Integer, LinkedList<Integer>> dialpad, LinkedList<Integer> path) {
+    public void dialHelper(int start, int length, HashMap<Integer, LinkedList<Integer>> dialpad, LinkedList<Integer> path) {
 
 
-        if (length <= 0) {
-          result.add(new LinkedList<>(path));
-          return;
+        if (length == 1) {
+            path.add(start);
+            result.add(new LinkedList<>(path));
+            return;
         }
 
         path.add(start);
 
         for (Integer i: dialpad.get(start)) {
             dialHelper(i, length - 1, dialpad, path);
+            path.removeLast();
         }
-        int a = path.removeLast();
-        System.out.println("Remove: " + a);
-
 
     }
 

@@ -187,7 +187,6 @@ public class TreeTraversals {
                 if (!visited.contains(i)) {
                     queue.add(i);
                 }
-
             }
         }
 
@@ -335,10 +334,10 @@ public class TreeTraversals {
 //        System.out.println("\nIterative PostOrder");
 //        postOrderIterative(tree.root);
 
-        System.out.println("DFS Recursion Rong");
-        for (int i: dfsRecursive(g, 0)) {
-            System.out.print(i + " ");
-        }
+//        System.out.println("DFS Recursion Rong");
+//        for (int i: dfsRecursive(g, 0)) {
+//            System.out.print(i + " ");
+//        }
 //
 //        System.out.println("\nDFS Iterative Rong");
 //        for (int i: dfsIterative(g, 0)) {
@@ -353,10 +352,10 @@ public class TreeTraversals {
 //            System.out.print(i + " ");
 //        }
 
-//        System.out.println("\nFind distances");
-//        for (int i: findShortestPath(g, 0, 7)) {
-//            System.out.print(i + " ");
-//        }
+        System.out.println("\nFind distances");
+        for (int i: findShortestPath(g, 0, 7)) {
+            System.out.print(i + " ");
+        }
 
     }
 }

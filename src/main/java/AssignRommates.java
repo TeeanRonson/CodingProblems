@@ -45,7 +45,6 @@ public class AssignRommates {
         boolean[] added = new boolean[array.length];
 
 
-        
 //        for (int i = 0; i < array.length; i++) {
 //            if (i == array[array[i]] && array[array[i]] == i) {
 //                result.add(new Integer[] {i, array[i]});

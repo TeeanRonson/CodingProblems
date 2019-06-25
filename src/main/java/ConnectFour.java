@@ -74,9 +74,6 @@ public class ConnectFour {
                 complete = true;
                 printBoard();
                 checkWin(i, column);
-//                if (checkDiagonals(i, column) == true || checkHorizontal(i, column) == true || checkVertical(i, column) == true) {
-//                    this.gameOver = true;
-//                }
                 return complete;
             } else {
                 i++;
@@ -88,6 +85,8 @@ public class ConnectFour {
 
     /**
      * All positions are played
+     *
+     * Check only the top row of board
      * Game ends
      * @return
      */
@@ -134,7 +133,6 @@ public class ConnectFour {
             System.out.println();
         }
         System.out.println();
-
     }
 
 

@@ -139,7 +139,7 @@ public class PyramidGreatestSum {
     }
 
 
-    private void findPath(int total) {
+    private void findPath2(int total) {
 
         // Start from top left. As we move down, we subtract the
         // largest child value from the parent.
@@ -156,6 +156,27 @@ public class PyramidGreatestSum {
             }
             next = top - largest;
             top = top - next;
+            path.add(next);
+        }
+    }
+
+    private void findPath(int total) {
+
+        int top = total;
+        int first = 0;
+        int second = 1;
+        int next = 0;
+        for (int i = 1; i < this.board.length; i++) {
+            int value1 = this.board[i][first];
+            int value2 = this.board[i][second];
+            if (value1 > value2) {
+               next = total - value1;
+            } else {
+               next = total - value2;
+               first++;
+               second++;
+            }
+            total = total - next;
             path.add(next);
         }
     }

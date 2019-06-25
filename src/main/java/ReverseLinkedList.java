@@ -29,15 +29,6 @@ public class ReverseLinkedList {
     }
 
 
-    static class Node {
-        int value;
-        Node next;
-        Node(int val) {
-            value = val;
-            next = null;
-        }
-    }
-
     public static void print(Node node) {
 
         Node current = node;
@@ -48,11 +39,20 @@ public class ReverseLinkedList {
 
     }
 
+    static class Node {
+        int value;
+        Node next;
+        Node(int val) {
+            value = val;
+            next = null;
+        }
+    }
+
     public static void main(String[] args) {
 
         Node head = new Node(0);
         Node curr = head;
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 5; i++) {
             curr.next = new Node(i);
             curr = curr.next;
         }

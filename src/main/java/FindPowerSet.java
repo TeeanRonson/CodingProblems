@@ -11,6 +11,7 @@ public class FindPowerSet {
             for (int i = 0; i < length; i++) {
                 ArrayList<Integer> temp = new ArrayList<Integer>(result.get(i));
                 temp.add(e);
+                System.out.println("Temp:" + temp);
                 result.add(temp);
             }
         }

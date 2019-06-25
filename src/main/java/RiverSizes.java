@@ -75,11 +75,6 @@ public class RiverSizes {
 
     public static void main(String[] args) {
 
-        boolean[] a = new boolean[2];
-
-        for (boolean x: a) {
-            System.out.println(x);
-        }
 
         int[][] matrix = {
                 {1, 0, 0, 1, 0},

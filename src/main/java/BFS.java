@@ -45,9 +45,33 @@ public class BFS {
                 }
             }
         }
-
         return false;
 
+    }
+
+    public static boolean findConnection1(Graph g, int src, int dst) {
+
+        LinkedList<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[g.V];
+        queue.add(src);
+        visited[src] = true;
+
+        System.out.println(queue);
+
+        while (!queue.isEmpty()) {
+            int curr = queue.removeFirst();
+            for (int i: g.adjListArray[curr]) {
+                if (visited[i] == true) {
+                    continue;
+                }
+                if (i == dst) {
+                    return true;
+                }
+                queue.add(i);
+                visited[i] = true;
+            }
+        }
+        return false;
     }
 
 
@@ -80,19 +104,28 @@ public class BFS {
 
     public static void main(String[] args) {
 
-        Graph g = new Graph(5);
+        Graph g = new Graph(6);
 
         g.addEdge(g, 0, 1);
         g.addEdge(g, 1, 2);
         g.addEdge(g, 1, 3);
-        g.addEdge(g, 2, 3);
+        g.addEdge(g, 2, 1);
         g.addEdge(g, 3, 1);
         g.addEdge(g, 4, 5);
+        g.addEdge(g, 3, 5);
+        g.addEdge(g, 5, 4);
 
 
 //        bfs(g, 0);
-
         System.out.println(findConnection(g, 0, 4));
+
+        System.out.println(findConnection1(g, 0, 4));
+
+
+        System.out.println(findConnection(g, 2, 4));
+
+        System.out.println(findConnection1(g, 2, 4));
+
     }
 
 }

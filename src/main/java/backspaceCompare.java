@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class backspaceCompare {
 
@@ -43,6 +44,40 @@ public class backspaceCompare {
         }
 
         return false;
+    }
+
+    /**
+     * Solving with stacks
+     * @param A
+     * @param B
+     * @return
+     */
+    public static boolean backSpaceCompareStacks(String A, String B) {
+
+        return process(A).equals(process(B));
+    }
+
+    private static String process(String word) {
+
+        char[] wordArray = word.toCharArray();
+        Stack<Character> result = new Stack<>();
+
+
+        for (char c: wordArray) {
+            if (c != '#') {
+                result.push(c);
+            } else {
+                if (!result.isEmpty()) {
+                    result.pop();
+                } else {
+                    continue;
+                }
+            }
+        }
+
+        System.out.println(result.toString());
+
+        return result.toString();
     }
 
 
@@ -92,11 +127,11 @@ public class backspaceCompare {
 
     public static void main(String[] args) {
 
-      System.out.println(backspaceCompare("ab#c", "ad#c", '#'));
+      System.out.println(backSpaceCompareStacks("ab#c", "ad#c"));
 
-      System.out.println(backspaceCompare("y#fo##f", "y#f#o##f", '#'));
+      System.out.println(backSpaceCompareStacks("y#fo##f", "y#f#o##f"));
 
-      System.out.println(backspaceCompare("ab//a", "abc/a", '/'));
+//      System.out.println(backspaceCompare("ab//a", "abc/a", '/'));
 
     }
 }

@@ -22,30 +22,31 @@ public class IsListPalindrome {
         int i = 0;
         int j = 0;
 
-        while(headTwo != null && headTwo.next != null) {
-            headTwo = headTwo.next.next;
+        while(headTwo != null) {
+            headTwo = headTwo.next;
             i++;
         }
 
-        System.out.println(i);
-        //If odd
-        if (i % 2 != 0) {
-            while (headOne != null) {
-                if (j < i) {
+        int mid = i/2;
+        System.out.println("mid: " + mid);
+
+        if (i % 2  != 0) {
+            while(headOne != null) {
+                System.out.println(headOne.value);
+                if (j < mid) {
                     store.push(headOne.value);
-                } else if (j > i) {
+                } else if (j > mid){
                     if (store.pop() != headOne.value) {
                         return false;
                     }
                 }
                 headOne = headOne.next;
                 j++;
-
             }
-            //if even
         } else {
-            while (headOne != null) {
-                if (j < i) {
+            while(headOne != null) {
+                System.out.println(headOne.value);
+                if (j < mid) {
                     store.push(headOne.value);
                 } else {
                     if (store.pop() != headOne.value) {
@@ -56,6 +57,8 @@ public class IsListPalindrome {
                 j++;
             }
         }
+
+
 
         return true;
 
@@ -78,6 +81,21 @@ public class IsListPalindrome {
         four.next = five;
         five.next = six;
         six.next = null;
+
+
+//        ListNode<Integer> one = new ListNode<Integer>(1);
+//        ListNode<Integer> two = new ListNode<Integer>(2);
+//        ListNode<Integer> three = new ListNode<>(3);
+//        ListNode<Integer> four = new ListNode<Integer>(2);
+//        ListNode<Integer> five = new ListNode<Integer>(1);
+//
+//        one.next = two;
+//        two.next = three;
+//        three.next = four;
+//        four.next = five;
+//        five.next = null;
+
+
 
         System.out.println(isPalindrome(one));
 
