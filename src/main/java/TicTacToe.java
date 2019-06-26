@@ -12,6 +12,8 @@ public class TicTacToe {
 
     public boolean play(char shape) {
 
+        System.out.println("Here we go");
+
         Random r = new Random();
         while (true) {
             int row = r.nextInt(3);
@@ -118,22 +120,6 @@ public class TicTacToe {
         return false;
     }
 
-
-//    private boolean checkDiagonal(char shape, int row, int col) {
-//
-//        int i = 1;
-//        //check NE
-//        int N = row - 1, E = col + 1, S = row + 1, W = col - 1;
-//        while(N >=0 && E < this.board.length) {
-//
-//        }
-//        //check NW
-//
-//        //check SE
-//
-//        //check SW
-//
-//    }
 
     public static void main(String[] args) {
 
