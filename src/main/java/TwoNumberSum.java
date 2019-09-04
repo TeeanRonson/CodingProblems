@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class TwoNumberSum {
 
 
@@ -91,5 +93,58 @@ public class TwoNumberSum {
 
         System.out.println();
     }
+
+
+
+     public static int[] twoNumberSumII(int[] array, int targetSum) {
+
+            int[] result = new int[] {0 ,0};
+            if (array.length == 0) return result;
+            HashSet<Integer> db = new HashSet<>();
+
+            for (int i = 0; i < array.length; i++) {
+                int diff = targetSum - array[i];
+                if (db.contains(array[i])) {
+                    return sortArray(result, diff, array[i]);
+                } else {
+                    db.add(diff);
+                    System.out.println(db);
+                }
+            }
+
+            return new int[] {};
+        }
+
+    public static int[] sortArray(int[] array, int one, int two) {
+
+        System.out.println("here");
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        if (one > two) {
+            array[0] = two;
+            array[1] = one;
+        } else {
+            array[0] = one;
+            array[1] = two;
+        }
+
+
+        return array;
+    }
+
+        public static void main(String[] args) {
+
+            int[] one = new int[] {3, 5, -4, 8, 11, 1, -1, 6};
+
+            int[] two = new int[] {-21, 301, 12, 4, 65, 56, 210, 356, 9, -47};
+
+
+            twoNumberSumII(two, 164);
+
+
+
+        }
+
+
 
 }

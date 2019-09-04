@@ -65,10 +65,14 @@ public class ZigZagStringConversion {
 
         public static void main(String[] args) {
 
-            String s = "PAYPALISHIRING";
-            String ans = "PAHNAPLSIIGYIR";
-            System.out.println(convert(s, 3));
-            System.out.println(ans);
+//            String s = "PAYPALISHIRING";
+//            String ans = "PAHNAPLSIIGYIR";
+//            System.out.println(convert(s, 3));
+//            System.out.println(ans);
+
+
+            char w = 'w';
+            char a = 'a';
 
 
         }
