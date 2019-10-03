@@ -1,5 +1,6 @@
 import com.sun.deploy.security.CertificateHostnameVerifier;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 public class CheckClose {
@@ -48,16 +49,27 @@ public class CheckClose {
 
     public static void main(String[] args) {
 
+//
+//        CheckClose cc = new CheckClose();
+//
+//        System.out.println(cc.readString("{[()]}"));
+//        System.out.println(cc.readString("[}{]"));
+//        System.out.println(cc.readString("(){}[]"));
+//        System.out.println(cc.readString("(((())))"));
+//        System.out.println(cc.readString("((([]))){}"));
+//        System.out.println(cc.readString("{(})"));
+//        System.out.println(cc.readString("[][]{{[}]}}"));
 
-        CheckClose cc = new CheckClose();
 
-        System.out.println(cc.readString("{[()]}"));
-        System.out.println(cc.readString("[}{]"));
-        System.out.println(cc.readString("(){}[]"));
-        System.out.println(cc.readString("(((())))"));
-        System.out.println(cc.readString("((([]))){}"));
-        System.out.println(cc.readString("{(})"));
-        System.out.println(cc.readString("[][]{{[}]}}"));
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        map.put(5, 3);
+        map.put(5, 2);
+
+        System.out.println(map.entrySet());
+        System.out.println(map.remove(5));
+        System.out.println(map.entrySet());
+
 
 
 //        Stack<Character> a = new Stack<>();

@@ -23,10 +23,6 @@ public class ProductSum {
         return sum * multiplier;
     }
 
-    public static void addTwo(int x) {
-        x += 2;
-
-    }
 
 
     public static void main(String[] args) {
@@ -41,19 +37,6 @@ public class ProductSum {
 //        one.add(two);
 //
 //        System.out.println(productSum(one));
-
-
-
-        boolean[] test = new boolean[2];
-
-        for (boolean x: test) {
-            System.out.println(x);
-        }
-
-        int x = 5;
-
-        addTwo(x);
-        System.out.println(x);
 
 
     }

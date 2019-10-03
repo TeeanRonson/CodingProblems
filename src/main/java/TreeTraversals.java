@@ -159,6 +159,7 @@ public class TreeTraversals {
             int curr = stack.pop();
             if (!visited.contains(curr)) {
                 result.add(curr);
+                visited.add(curr);
             }
 
             for (int i = graph.adjListArray[curr].size() - 1; i >= 0; i--) {
@@ -339,10 +340,10 @@ public class TreeTraversals {
 //            System.out.print(i + " ");
 //        }
 //
-//        System.out.println("\nDFS Iterative Rong");
-//        for (int i: dfsIterative(g, 0)) {
-//            System.out.print(i + " ");
-//        }
+        System.out.println("\nDFS Iterative Rong");
+        for (int i: dfsIterative(g, 0)) {
+            System.out.print(i + " ");
+        }
 //
 //        System.out.println("\nGeeksForGeeks DFS");
 //        g.DFS(0);
@@ -352,10 +353,10 @@ public class TreeTraversals {
 //            System.out.print(i + " ");
 //        }
 
-        System.out.println("\nFind distances");
-        for (int i: findShortestPath(g, 0, 7)) {
-            System.out.print(i + " ");
-        }
+//        System.out.println("\nFind distances");
+//        for (int i: findShortestPath(g, 0, 7)) {
+//            System.out.print(i + " ");
+//        }
 
     }
 }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class MinMaxStack {
@@ -42,7 +43,7 @@ public class MinMaxStack {
             if (peek() == maxValue) {
                 maxValue = getTopNode().prevMax;
             }
-            
+
             return stack.removeLast().value;
         }
 
@@ -76,26 +77,28 @@ public class MinMaxStack {
         }
     }
 
+
+
     public static void main(String[] args) {
 
-        MinMaxStack.MinMax stack = new MinMaxStack.MinMax();
+        MinMaxStack.MinMax stack = new MinMax();
 
         System.out.println("\nInsert 5");
         stack.push(5);
-        System.out.println(stack.getMax());
         System.out.println(stack.getMin());
+        System.out.println(stack.getMax());
         System.out.println(stack.peek());
 
         System.out.println("\nInsert 7");
         stack.push(7);
-        System.out.println(stack.getMax());
         System.out.println(stack.getMin());
+        System.out.println(stack.getMax());
         System.out.println(stack.peek());
 
         System.out.println("\nInsert 2");
         stack.push(2);
-        System.out.println(stack.getMax());
         System.out.println(stack.getMin());
+        System.out.println(stack.getMax());
         System.out.println(stack.peek());
 
         System.out.println("\nPOP");
@@ -106,11 +109,6 @@ public class MinMaxStack {
         System.out.println(stack.peek());
         System.out.println(stack.getMax());
         System.out.println(stack.getMin());
-
-
-
-
-
     }
 
 

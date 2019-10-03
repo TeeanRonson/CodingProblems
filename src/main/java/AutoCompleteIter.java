@@ -59,6 +59,7 @@
                 result.add(builder.toString());
             }
 
+
             for (TreeNode next: node.children.values()) {
                 builder.append(next.cha);
                 helpComplete(result, node, builder);
