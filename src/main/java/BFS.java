@@ -21,7 +21,6 @@ public class BFS {
             }
 
         }
-
     }
 
     public static boolean findConnection(Graph g, int src, int dst) {
@@ -115,8 +114,6 @@ public class BFS {
         g.addEdge(g, 3, 5);
         g.addEdge(g, 5, 4);
 
-
-//        bfs(g, 0);
         System.out.println(findConnection(g, 0, 4));
 
         System.out.println(findConnection1(g, 0, 4));

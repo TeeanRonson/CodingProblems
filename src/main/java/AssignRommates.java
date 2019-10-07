@@ -3,7 +3,6 @@ import java.util.HashMap;
 
 public class AssignRommates {
 
-
     /**
      * Method only finds optimal room mates
      * @param array

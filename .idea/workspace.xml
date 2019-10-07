@@ -2,37 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95f090e8-2cda-4252-8a2e-61fe90c31e88" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/AmazonOAXianan.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/BridgesAdjacencyList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GoogleOA2019.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/LongestPalindromicSubstring.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/RefillWateringPlants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ReverseDominoes.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SuffixTrie.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/WateringFlowers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/YelpOAXianan.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/YelpOAXianan2.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Problems.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DependencyList.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/LongestConsecutiveSequenceTree.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ActivitySelection.java" afterPath="$PROJECT_DIR$/src/main/java/ActivitySelection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AmazonOAXianan.java" afterPath="$PROJECT_DIR$/src/main/java/AmazonOAXianan.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AssignRommates.java" afterPath="$PROJECT_DIR$/src/main/java/AssignRommates.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AutoCompleteIter.java" afterPath="$PROJECT_DIR$/src/main/java/AutoCompleteIter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BFS.java" afterPath="$PROJECT_DIR$/src/main/java/BFS.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CheckClose.java" afterPath="$PROJECT_DIR$/src/main/java/CheckClose.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinMaxStack.java" afterPath="$PROJECT_DIR$/src/main/java/MinMaxStack.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Permutations.java" afterPath="$PROJECT_DIR$/src/main/java/Permutations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProductSum.java" afterPath="$PROJECT_DIR$/src/main/java/ProductSum.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TreeTraversals.java" afterPath="$PROJECT_DIR$/src/main/java/TreeTraversals.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZigZagStringConversion.java" afterPath="$PROJECT_DIR$/src/main/java/ZigZagStringConversion.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backspaceCompare.java" afterPath="$PROJECT_DIR$/src/main/java/backspaceCompare.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ActivitySelection.class" afterPath="$PROJECT_DIR$/target/classes/ActivitySelection.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AmazonOAXianan$PairInt.class" afterPath="$PROJECT_DIR$/target/classes/AmazonOAXianan$PairInt.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AmazonOAXianan.class" afterPath="$PROJECT_DIR$/target/classes/AmazonOAXianan.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssignRommates.class" afterPath="$PROJECT_DIR$/target/classes/AssignRommates.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/AutoCompleteIter$TreeNode.class" afterPath="$PROJECT_DIR$/target/classes/AutoCompleteIter$TreeNode.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/AutoCompleteIter.class" afterPath="$PROJECT_DIR$/target/classes/AutoCompleteIter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CheckClose.class" afterPath="$PROJECT_DIR$/target/classes/CheckClose.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MinMaxStack$MinMax.class" afterPath="$PROJECT_DIR$/target/classes/MinMaxStack$MinMax.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MinMaxStack$Node.class" afterPath="$PROJECT_DIR$/target/classes/MinMaxStack$Node.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MinMaxStack.class" afterPath="$PROJECT_DIR$/target/classes/MinMaxStack.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Permutations.class" afterPath="$PROJECT_DIR$/target/classes/Permutations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ProductSum.class" afterPath="$PROJECT_DIR$/target/classes/ProductSum.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TreeTraversals$BinaryTree.class" afterPath="$PROJECT_DIR$/target/classes/TreeTraversals$BinaryTree.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TreeTraversals$Graph.class" afterPath="$PROJECT_DIR$/target/classes/TreeTraversals$Graph.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TreeTraversals$Node.class" afterPath="$PROJECT_DIR$/target/classes/TreeTraversals$Node.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TreeTraversals.class" afterPath="$PROJECT_DIR$/target/classes/TreeTraversals.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ZigZagStringConversion.class" afterPath="$PROJECT_DIR$/target/classes/ZigZagStringConversion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RefillWateringPlants.class" afterPath="$PROJECT_DIR$/target/classes/RefillWateringPlants.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backspaceCompare.class" afterPath="$PROJECT_DIR$/target/classes/backspaceCompare.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +33,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoogleOA2019.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GoogleOA2019.java">
+      <file leaf-file-name="Problems.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problems.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="55" column="5" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backspaceCompare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/backspaceCompare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongestConsecutiveSequenceTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LongestConsecutiveSequenceTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+              <folding>
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BFS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1800">
+              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DependencyList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DependencyList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,21 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RefillWateringPlants.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RefillWateringPlants.java">
+      <file leaf-file-name="AssignRommates.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AssignRommates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            <state relative-caret-position="45">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReverseDominoes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ReverseDominoes.java">
+      <file leaf-file-name="AddTwoNumbersInLinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AddTwoNumbersInLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="5" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="42" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -103,22 +138,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/LargestRange.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StringPlay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TwoSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreeNumberSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/AddTwoNumbersInLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ClosestValueInBst.java" />
         <option value="$PROJECT_DIR$/src/main/java/DFS.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReverseInteger.java" />
         <option value="$PROJECT_DIR$/src/main/java/LetterCombinations.java" />
         <option value="$PROJECT_DIR$/src/main/java/Divide.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AssignRommates.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConnectFour.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReverseLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/backspaceCompare.java" />
         <option value="$PROJECT_DIR$/src/main/java/GetNthFibValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BFS.java" />
         <option value="$PROJECT_DIR$/src/main/java/SmallestDifference.java" />
         <option value="$PROJECT_DIR$/src/main/java/KadanesAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/RiverSizes.java" />
@@ -139,14 +167,11 @@
         <option value="$PROJECT_DIR$/src/main/java/ProductSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/BridgesAdjacencyList.java" />
         <option value="$PROJECT_DIR$/src/main/java/TreeTraversals.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AmazonOAXianan.java" />
         <option value="$PROJECT_DIR$/src/main/java/YelpOAXianan.java" />
         <option value="$PROJECT_DIR$/src/main/java/Permutations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CheckClose.java" />
         <option value="$PROJECT_DIR$/src/main/java/MinMaxStack.java" />
         <option value="$PROJECT_DIR$/src/main/java/LongestPalindromicSubstring.java" />
         <option value="$PROJECT_DIR$/src/main/java/SuffixTrie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AutoCompleteIter.java" />
         <option value="$PROJECT_DIR$/src/main/java/YelpOAXianan2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ZigZagStringConversion.java" />
         <option value="$PROJECT_DIR$/src/main/java/WateringFlowers.java" />
@@ -154,6 +179,16 @@
         <option value="$PROJECT_DIR$/src/main/java/GoogleOA2019.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReverseDominoes.java" />
         <option value="$PROJECT_DIR$/src/main/java/RefillWateringPlants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ActivitySelection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AssignRommates.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AmazonOAXianan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AutoCompleteIter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/backspaceCompare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DependencyList.java" />
+        <option value="$PROJECT_DIR$/Problems.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/CheckClose.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LongestConsecutiveSequenceTree.java" />
       </list>
     </option>
   </component>
@@ -164,10 +199,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,6 +219,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,9 +251,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -226,7 +260,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Rong/Documents/USF/CS601/problems/src/main/java/AutoCompleteIter.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Rong/Documents/USF/CS601/problems/src/main/java/CheckClose.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -249,7 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RefillWateringPlants">
+  <component name="RunManager" selected="Application.LongestConsecutiveSequenceTree">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -257,9 +291,9 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="GoogleOA2019" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivitySelection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="GoogleOA2019" />
+      <option name="MAIN_CLASS_NAME" value="ActivitySelection" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -271,9 +305,9 @@
       <module name="problems" />
       <envs />
     </configuration>
-    <configuration name="KadanesAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AutoCompleteIter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="KadanesAlgorithm" />
+      <option name="MAIN_CLASS_NAME" value="AutoCompleteIter" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -285,9 +319,9 @@
       <module name="problems" />
       <envs />
     </configuration>
-    <configuration name="RefillWateringPlants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="RefillWateringPlants" />
+      <option name="MAIN_CLASS_NAME" value="BFS" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -299,23 +333,9 @@
       <module name="problems" />
       <envs />
     </configuration>
-    <configuration name="WateringFlowers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="LongestConsecutiveSequenceTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WateringFlowers" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="problems" />
-      <envs />
-    </configuration>
-    <configuration name="ZigZagStringConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ZigZagStringConversion" />
+      <option name="MAIN_CLASS_NAME" value="LongestConsecutiveSequenceTree" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -339,6 +359,20 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="backspaceCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="backspaceCompare" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="problems" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -402,19 +436,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ZigZagStringConversion" />
-      <item index="1" class="java.lang.String" itemvalue="Application.KadanesAlgorithm" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WateringFlowers" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GoogleOA2019" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RefillWateringPlants" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ActivitySelection" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AutoCompleteIter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.backspaceCompare" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BFS" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LongestConsecutiveSequenceTree" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RefillWateringPlants" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GoogleOA2019" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WateringFlowers" />
-        <item index="3" class="java.lang.String" itemvalue="Application.KadanesAlgorithm" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ZigZagStringConversion" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LongestConsecutiveSequenceTree" />
+        <item index="1" class="java.lang.String" itemvalue="Application.BFS" />
+        <item index="2" class="java.lang.String" itemvalue="Application.backspaceCompare" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AutoCompleteIter" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ActivitySelection" />
       </list>
     </recent_temporary>
   </component>
@@ -435,32 +469,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2722513" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18010472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15762538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16544567" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16910867" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39815763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39815763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2722513" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -473,48 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindValueInCyclicArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindMissingValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FindPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StringPlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LetterCombinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CyclicRotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KnightsDialer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -533,13 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="129" column="9" lean-forward="false" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backspaceCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -648,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ClosestValueInBst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -705,18 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AmazonOAXianan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ZigZagStringConversion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1120">
           <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,29 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-          <folding>
-            <element signature="e#108#109#0" expanded="false" />
-            <element signature="e#150#151#0" expanded="false" />
-            <element signature="e#1357#1358#0" expanded="false" />
-            <element signature="e#1412#1413#0" expanded="false" />
-            <element signature="e#1449#1450#0" expanded="false" />
-            <element signature="e#1491#1492#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1566#1567#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AutoCompleteIter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#2568#2569#0" expanded="false" />
-            <element signature="e#2631#2632#0" expanded="false" />
-            <element signature="e#2668#2669#0" expanded="false" />
-            <element signature="e#2718#2719#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="26" column="66" lean-forward="false" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1116">
           <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,9 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,9 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,17 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CheckClose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,15 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="92" column="20" lean-forward="false" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1024">
           <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +773,7 @@
         <state relative-caret-position="810">
           <caret line="55" column="5" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -865,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="56" column="5" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="56" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,6 +790,104 @@
         <state relative-caret-position="305">
           <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ActivitySelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AmazonOAXianan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AssignRommates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AddTwoNumbersInLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="42" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DependencyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AutoCompleteIter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2029">
+          <caret line="166" column="11" lean-forward="true" selection-start-line="159" selection-start-column="8" selection-end-line="166" selection-end-column="11" />
+          <folding>
+            <element signature="e#154#155#0" expanded="false" />
+            <element signature="e#196#197#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problems.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CheckClose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/backspaceCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LongestConsecutiveSequenceTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

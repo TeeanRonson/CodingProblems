@@ -1,0 +1,30 @@
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+1. Activity selection
+Problem:
+Given two array of integers, which represent activities throughout an event.
+Find the maximum set of activities that an individual can take part in.
+n   -->  Total number of activities
+s[] -->  An array that contains start time of all activities
+f[] -->  An array that contains finish time of all activities
+
+int s[] =  {1, 3, 0, 5, 3, 5, 6, 8, 8, 2, 12};
+int f[] =  {4, 5, 6, 7, 9, 9, 10, 11, 12, 14, 16};
+
+Solution - Greedy:
+We know that the end times are sorted in ascending order. So we add the first event, and add the 'end time' of the
+next event that starts after end of the first event. We keep looping until the end.
+This approach is greedy and may not always return the maximum number of events we can attend.
+
+2. AddTwoNumbersInLinkedList
+When working with LinkedLists, it is always useful to consider using a dummy node that points to the head.
+
+3. AmazonOAXianan - Find the location of a value in a 2d array
+
+4. GooglePhoneInterview - AssignRoommates
+
+
+

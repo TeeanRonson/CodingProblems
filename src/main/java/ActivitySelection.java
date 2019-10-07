@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 public class ActivitySelection {
 
-
     // Prints a maximum set of activities that can be done by a single
     // person, one at a time.
     //  n   -->  Total number of activities
@@ -19,13 +18,10 @@ public class ActivitySelection {
 
         for (int i = 1; i < n; i++) {
             if (s[i] >= end) {
-                System.out.print(s[i] + " ");
                 result.add(f[i]);
                 end = f[i];
             }
-
         }
-        System.out.println();
 
         for (Integer i: result) {
             System.out.print(i + " ");

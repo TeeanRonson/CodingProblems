@@ -2,31 +2,14 @@ import com.sun.tools.javac.util.Pair;
 
 import java.util.*;
 
-//LeetCode 240
-//138
 public class AmazonOAXianan {
 
     public static PairInt locationOfTargetValue(int rowCount, int columnCount, List<List<Integer>> matrix, int targetValue) {
-
-//        int i = 0;
-//        int j = 0;
-//        for(List<Integer> list: matrix) {
-//            for (Integer x: list) {
-//                if (x == targetValue) {
-//                    return new PairInt(i, j);
-//                }
-//                j++;
-//            }
-//            i++;
-//            j = 0;
-//        }
-//        return new PairInt(-1, -1);
 
         if (rowCount <= 0 || columnCount <= 0 || matrix.isEmpty()) return new PairInt(-1, -1);
 
         int i = 0;
         int j = columnCount - 1;
-
         while (i < rowCount && j >= 0) {
             int value = matrix.get(i).get(j);
             if (value == targetValue) {
@@ -38,9 +21,7 @@ public class AmazonOAXianan {
                 j--;
             }
         }
-
         return new PairInt(-1, -1);
-
     }
 
     private static class PairInt {

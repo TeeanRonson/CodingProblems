@@ -1,157 +1,153 @@
+import java.util.*;
 
+public class AutoCompleteIter {
 
-    import java.util.*;
+    private TreeNode root;
 
-    public class AutoCompleteIter {
+    /**
+     * Constructor
+     *
+     */
+    public AutoCompleteIter() {
+        this.root = new TreeNode();
+    }
 
-        private TreeNode root;
+    public void fillLibrary(String[] library) {
 
-        /**
-         * Constructor
-         *
-         */
-        public AutoCompleteIter() {
-            this.root = new TreeNode();
-
-        }
-
-        public void fillLibrary(String[] library) {
-
-            for(String word: library) {
-                char[] cArray = word.toCharArray();
-                TreeNode curr = this.root;
-                for (int i = 0; i < cArray.length; i++) {
-                    if (curr.getChildren().get(cArray[i]) == null) {
-                        curr.getChildren().put(cArray[i], new TreeNode(cArray[i]));
-                    }
-                    curr = curr.getChildren().get(cArray[i]);
+        for(String word: library) {
+            char[] cArray = word.toCharArray();
+            TreeNode curr = this.root;
+            for (int i = 0; i < cArray.length; i++) {
+                if (curr.getChildren().get(cArray[i]) == null) {
+                    curr.getChildren().put(cArray[i], new TreeNode(cArray[i]));
                 }
-                curr.isWord();
+                curr = curr.getChildren().get(cArray[i]);
             }
-
+            curr.isWord();
         }
+    }
 
 
-        public List<String> completer(String prefix) {
+    public List<String> completer(String prefix) {
 
-            List<String> result = new ArrayList<>();
-            char[] pref = prefix.toCharArray();
-            TreeNode node = this.root;
-            for (char c: pref) {
-                if (node == null) {
-                    return result;
-                }
-                node = node.children.get(c);
-            }
-
-            helpComplete(result, node, new StringBuilder(prefix));
-
-            return result;
-        }
-
-        private void helpComplete(List<String> result, TreeNode node, StringBuilder builder) {
-
+        List<String> result = new ArrayList<>();
+        char[] pref = prefix.toCharArray();
+        TreeNode node = this.root;
+        //Traverse the list down to the end of the prefix
+        for (char c: pref) {
             if (node == null) {
-                return;
+                return result;
             }
+            node = node.children.get(c);
+        }
 
-            if (node.isWord) {
-                result.add(builder.toString());
-            }
+        //Pass the Node which has the end of the prefix, the result list, and a strinbuilder.
+        helpComplete(result, node, new StringBuilder(prefix));
 
+        return result;
+    }
 
-            for (TreeNode next: node.children.values()) {
-                builder.append(next.cha);
-                helpComplete(result, node, builder);
+    private void helpComplete(List<String> result, TreeNode node, StringBuilder builder) {
 
+        if (node == null) {
+            return;
+        }
+
+        if (node.isWord) {
+            result.add(builder.toString());
+        }
+
+        for (TreeNode next: node.children.values()) {
+            builder.append(next.cha);
+            helpComplete(result, node, builder);
+        }
+    }
+
+    public void printTree() {
+        print("", this.root);
+
+    }
+
+    private void print(String word, TreeNode node) {
+
+        if (node.isWord == true) {
+            System.out.println(word);
+        }
+
+        for (Character cha: node.children.keySet()) {
+            TreeNode next = node.children.get(cha);
+            if (next != null) {
+                print(word + next.cha, next);
             }
         }
 
-        public void printTree() {
-            print("", this.root);
+    }
 
+    private class TreeNode {
+        private HashMap<Character, TreeNode> children;
+        private char cha;
+        private boolean isWord;
+
+        private TreeNode(char cha) {
+            this.cha = cha;
+            this.children = new HashMap<>();
+            this.isWord = false;
         }
 
-        private void print(String word, TreeNode node) {
-
-            if (node.isWord == true) {
-                System.out.println(word);
-            }
-
-            for (Character cha: node.children.keySet()) {
-                TreeNode next = node.children.get(cha);
-                if (next != null) {
-                    print(word + next.cha, next);
-                }
-            }
-
+        private TreeNode() {
+            this.children = new HashMap<>();
         }
 
-        private class TreeNode {
-            private HashMap<Character, TreeNode> children;
-            private char cha;
-            private boolean isWord;
-
-            private TreeNode(char cha) {
-                this.cha = cha;
-                this.children = new HashMap<>();
-                this.isWord = false;
-            }
-
-            private TreeNode() {
-                this.children = new HashMap<>();
-            }
-
-            private void isWord() {
-                this.isWord = true;
-            }
-
-            HashMap<Character, TreeNode> getChildren() {
-                return this.children;
-            }
+        private void isWord() {
+            this.isWord = true;
         }
 
-        public static void main(String[] args) {
+        HashMap<Character, TreeNode> getChildren() {
+            return this.children;
+        }
+    }
 
-            String[] sArray = { "bat", "ball", "barrage", "barrier", "bell"};
-            String[] sArray2 = {
-                    "whids",
-                    "whyever",
-                    "whiff",
-                    "whiffable",
-                    "whiffed",
-                    "Whiffen",
-                    "whiffenpoof",
-                    "whiffer",
-                    "whiffers",
-                    "whiffet",
-                    "whiffets",
-                    "whiffy",
-                    "whiffing",
-                    "whiffle",
-                    "whiffled",
-                    "whiffler",
-                    "whifflery",
-                    "whiffleries",
-                    "whifflers",
-                    "whiffles",
-                    "whiffletree",
-                    "whiffletrees",
-                    "whiffling",
-                    "whifflingly",
-                    "whiffs",
-                    "whyfor",
-                    "whift",
-                    "Whig"
-            };
+    public static void main(String[] args) {
 
-            AutoCompleteIter a = new AutoCompleteIter();
+        String[] sArray = { "bat", "ball", "barrage", "barrier", "bell"};
+        String[] sArray2 = {
+                "whids",
+                "whyever",
+                "whiff",
+                "whiffable",
+                "whiffed",
+                "Whiffen",
+                "whiffenpoof",
+                "whiffer",
+                "whiffers",
+                "whiffet",
+                "whiffets",
+                "whiffy",
+                "whiffing",
+                "whiffle",
+                "whiffled",
+                "whiffler",
+                "whifflery",
+                "whiffleries",
+                "whifflers",
+                "whiffles",
+                "whiffletree",
+                "whiffletrees",
+                "whiffling",
+                "whifflingly",
+                "whiffs",
+                "whyfor",
+                "whift",
+                "Whig"
+        };
 
-            a.fillLibrary(sArray2);
+        AutoCompleteIter a = new AutoCompleteIter();
 
-            a.printTree();
+        a.fillLibrary(sArray2);
 
-            System.out.println(a.completer(""));
+        a.printTree();
+
+//        System.out.println(a.completer(""));
 
 
 //        System.out.println(a.complete("whi"));
@@ -161,7 +157,7 @@
 //        System.out.println(a.complete("a"));
 //        System.out.println(a.complete(""));
 
-            //fizz buzz:
+//        //fizz buzz:
 //        for (int i = 1; i <= 100; i++) {
 //
 //            if (i % 5 == 0 && i % 3 == 0) System.out.println("fizz buzz");
@@ -170,5 +166,5 @@
 //            else System.out.println(i);
 //        }
 
-        }
+    }
 }

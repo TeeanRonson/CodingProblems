@@ -62,7 +62,6 @@ public class backspaceCompare {
         char[] wordArray = word.toCharArray();
         Stack<Character> result = new Stack<>();
 
-
         for (char c: wordArray) {
             if (c != '#') {
                 result.push(c);
